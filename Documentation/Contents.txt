@@ -19,4 +19,3 @@ sidebar: #35465C
 Borders: #527DA8
 Headings: #D6E2EF
 secondary text: #B7C9DC
-
