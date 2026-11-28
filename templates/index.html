@@ -13,8 +13,8 @@
                 <section class="sidebar"> <!-- Sidebar -->
                     <h2 class="top">Links</h2>
                     <hr>
-                    <a href="">Subnet Calculator</a> <br>
-                    <a href="">Shortcut Page</a>
+                    <a href="http://subnetcalc.local">Subnet Calculator</a> <br>
+                    <a href="http://shortcut.local">Shortcut Page</a>
                 </section>
                 <section class="statsbar"> <!-- Stats -->
                     <h2 class="top">Statistics</h2>
@@ -25,47 +25,47 @@
                         <div class="system-grid">
                             <div class="stat-card">
                                 <h3>CPU Usage</h3>
-                                <p>placeholder%</p>
+                                <p>{{server1_cpu_usage}}%</p>
                             </div>
                             <div class="stat-card">
                                 <h3>CPU Temp</h3>
-                                <p>place °C</p>
+                                <p>{{server1_cpu_temp}}°C</p>
                             </div>
                             <div class="stat-card">
                                 <h3>RAM usage</h3>
-                                <p>placeholder%</p>
+                                <p>{{server1_ram_usage}}%</p>
                             </div>
                             <div class="stat-card">
                                 <h3>Disk usage</h3>
-                                <p>placeholder %</p>
+                                <p>{{server1_disk_usage}}%</p>
                             </div>
                         </div>
                         <h2 class="catheader">Network</h2>
                         <div class="network-grid">
                             <div class="stat-card">
                                 <h3>Download</h3>
-                                <p>Mb/s</p>
+                                <p>{{server1_download_speed}} Mb/s</p>
                             </div>
                             <div class="stat-card">
                                 <h3>Upload</h3>
-                                <p>Mb/s</p>
+                                <p>{{server1_upload_speed}} Mb/s</p>
                             </div>
                             <div class="stat-card">
                                 <h3>Local IP</h3>
-                                <p>IP</p>
+                                <p>{{server1_local_ip}}</p>
                             </div>
                         </div>
                         <h2 class="catheader">Storage</h2>
                         <div class="storage-grid">
                             <div class="stat-card">
                                 <h3>Internal SD</h3>
-                                <p>avail/total</p>
-                                <p>full%</p>
+                                <p>{{server1_storage1_avail}}/{{server1_storage1_total}}</p>
+                                <p>{{server1_storage1_percent}}%</p>
                             </div>
                             <div class="stat-card">
                                 <h3>Ext Data 1</h3>
-                                <p>avail/total</p>
-                                <p>full%</p>
+                                <p>{{server1_storage2_avail}}/{{server1_storage2_total}}</p>
+                                <p>{{server1_storage2_percent}}%</p>
                             </div>
                         </div>
                         </section>
@@ -75,17 +75,17 @@
                                 <ul  class="status-list">
                                     <li>
                                         <h3>SSH</h3>
-                                        <span>status</span>
+                                        <span>{{server1_ssh_status}}</span>
                                         <p></p>
                                     </li>
                                     <li>
                                         <h3>NginX</h3>
-                                        <span>status</span>
+                                        <span>{{server1_nginx_status}}</span>
                                         <p></p>
                                     </li>
                                     <li>
                                         <h3>Wireguard</h3>
-                                        <span>status</span>
+                                        <span>{{server2_wireguard_status}}</span>
                                         <p></p>
                                     </li>
                                 </ul>
@@ -93,17 +93,17 @@
                                 <ul  class="status-list">
                                     <li>
                                         <h3>Dashboard</h3>
-                                        <span>status</span>
+                                        <span>{{dashboard_status}}</span>
                                         <p></p>
                                     </li>
                                     <li>
                                         <h3>Subnet Calculator</h3>
-                                        <span>status</span>
+                                        <span>{{subnetcalc_status}}</span>
                                         <p></p>
                                     </li>
                                     <li>
                                         <h3>Shortcut Page</h3>
-                                        <span>status</span>
+                                        <span>{{shortcut_status}}</span>
                                         <p></p>
                                     </li>
                                 </ul>
